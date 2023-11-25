@@ -1,0 +1,13 @@
+.background{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(174, 241, 174);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
