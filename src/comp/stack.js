@@ -6,20 +6,21 @@ import { FaInfoCircle } from "react-icons/fa";
 import ToggleName from "./togle";
 
 const StackFlow = () => {
+  function Bapon(){
+    const hi = document.getElementById("visible");
+    const arrre = hi.className;
+    arrre === "invisible" ? hi.className="visible":hi.className="invisible";
+
+  }
+
   return (
     <div className="container flex text-center m-auto bg-gray-200 h-[100vh]">
       <div className="nav relative bg-gray-200 w-full h-14 ">
         <button
-          className="float-left"
-          onClick={() => {
-            document
-              .getElementById("root")
-              .setAttribute("className", "invisible");
-          }}
-        >
+          className="float-left" id="buttonfro" onClick={Bapon} >
           <IoMdList className="text-4xl my-2 float-left block" />
         </button>
-        <div id="root">
+        <div id="visible" className="invisible">
           <div className="absolute group mt-14 text-left text-sm w-48  bg-white outline outline-1 outline-blue-500">
             <ul>
               <li className="w-full hover:bg-gray-300 p-1 pl-2">Home</li>
@@ -35,9 +36,9 @@ const StackFlow = () => {
                 <div className="block w-full">
                   <p className="float-left w-[80] block text-md font-bold ">
                     COLLECTIVES
-                  </p>{" "}
+                  </p>
                   <FaPlus className="text-gray-500 hover:text-black block float-right w-[20] mr-1" />
-                </div>{" "}
+                </div>
                 <br />
                 <p className="p-1 hover:bg-gray-300">Explore Collectives</p>
               </div>
@@ -45,9 +46,9 @@ const StackFlow = () => {
                 <div className="block w-full">
                   <p className="float-left w-[80] block text-md font-bold ">
                     LABS
-                  </p>{" "}
+                  </p>
                   <FaInfoCircle className="text-gray-500 hover:text-black block float-right w-[20] mr-1" />
-                </div>{" "}
+                </div>
                 <br />
                 <p className="p-1 hover:bg-gray-300">Discussions</p>
               </div>
@@ -55,9 +56,9 @@ const StackFlow = () => {
                 <div className="block w-full">
                   <p className="float-left w-[80] block text-md font-bold ">
                     LABS
-                  </p>{" "}
+                  </p>
                   <FaInfoCircle className="text-gray-500 hover:text-black block float-right w-[20] mr-1" />
-                </div>{" "}
+                </div>
                 <br />
                 <p className="p-1 hover:bg-gray-300">Discussions</p>
               </div>
@@ -97,6 +98,7 @@ const StackFlow = () => {
           </button>
         </div>
       </div>
+      
     </div>
   );
 };
