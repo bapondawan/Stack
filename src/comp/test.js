@@ -1,16 +1,17 @@
 import React from 'react';
 import { ReactDOM } from 'react';
 const TestComp = () => {
+    console.log("bapon");
+    const vass= document.querySelector("#hange");
+    const list = ["Development","Mobile","shit","Cow"];
 
-    function Bapon(){
-        const hi = document.getElementById("house");
-            const arrre = hi.className; 
-            arrre === "invisible" ? hi.className = "visible":hi.className="invisible";
-      }
+    for(let i=0;i<list.length;i++){console.log(list[i])}
+    console.log(vass);
     return (
         <div>
-            <button id='button' onClick={Bapon} >Bapon</button>
-            <div id='house' className='invisible'>House</div>
+            <div>
+            <p className="">Every <div id="hange"></div> has a tab open to Stafdsfdsck Overflow</p>
+            </div>
         </div>
     );
 };
